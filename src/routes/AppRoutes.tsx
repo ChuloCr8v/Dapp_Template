@@ -9,7 +9,7 @@ const AppRoutes = () => {
   const { connectedAccount } = useConnectAccount();
   const navigate = useNavigate();
 
-  if (!connectedAccount) {
+  if (connectedAccount) {
     navigate("/connect");
   }
 
